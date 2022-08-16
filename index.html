@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <title>Home</title>
 </head>
 <body>
     <h1>Variable</h1>
@@ -42,6 +43,59 @@
     <p>Characters that cant be written in the string directly; ' " /</p>
     <div id="demo7"></div>
 
+    <h2>Breaking long code line with \</h2>
+    <div id="demo8"></div>
+
+    <h2>convert string into object.</h2>
+    <div id="demo9"></div>
+
+    <h1>String slicing</h1>
+        <ul>
+            <li>Extracting</li>
+            <li>Replacing</li>
+        </ul>
+    <h2>string slice()</h2>
+    <div id="demo10"></div>
+    <p>name.slice();<br>
+        slice cuts string from beginning and end, takes only middle value.
+        slice takes two values. first one represent the starting point, second one defines the beginning of non-included letters first letter.
+        when values are negative string should be counted from end.
+        single value represent the start of string, rest is taken.
+    </p>
+
+
+    <h2>substring</h2>
+    <div id="demo11"></div>
+    <p>substring are similar to slice, however less than 0 values are considered to be 0.</p>
+
+    <h2>substr</h2>
+    <div id="demo12"></div>
+    <p>similar to slice, however second value represents number of character should taken.</p>
+
+    <h2>Replacing</h2>
+    <div id="demo13"></div>
+    <div id="demo14"></div>
+    <ul>
+        <li>Should be used to make only new variable. returns a new string.</li>
+        <li>does not change the old string</li>
+        <li>only replaces the first match.</li>
+        <li>replace() is case sensitive.</li>
+    </ul>
+    <p>to replace all the match global /text/g is used</p>
+    <div id="demo15"></div>
+
+    <h2>trim()</h2>
+    <p>trim() method removes any excess whitespace.</p>
+    <div id="demo16"></div>
+
+
+
+
+
+
+    <style>
+        div{color: red};
+    </style>
     <script src="app/script.js"></script>
 </body>
 </html>
