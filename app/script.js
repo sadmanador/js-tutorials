@@ -50,3 +50,16 @@ typeof fruit + "<br>" + "<hr>";
 
 
 //string
+const alfa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const poem = "Time and tide wait for none"
+document.getElementById("demo6").innerHTML = alfa.length + "<br>" + poem.length + "<hr>";
+
+
+//string escape character
+const poem1 = "Hello \"new\" york";
+const poem2 = 'It\'s my life';
+const poem3 = "true\\false";
+document.getElementById("demo7").innerHTML = poem1 + "<br>" + poem2 + "<br>" + poem3;
+
+
+//
