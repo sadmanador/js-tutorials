@@ -98,3 +98,15 @@ document.getElementById("demo15").innerHTML = million.replace(/million/g, "thous
 
 let excessStr = "                                 Hello World!";
 document.getElementById("demo16").innerHTML = excessStr.trim();
+
+document.getElementById("demo17").innerHTML = billionaire.toUpperCase();
+document.getElementById("demo18").innerHTML = billionaire.toLowerCase();
+
+
+document.getElementById("demo21").innerHTML = fruitBasket.charAt(0);
+document.getElementById("demo22").innerHTML = fruitBasket.charCodeAt(0);
+document.getElementById("demo23").innerHTML = fruitBasket[1];
+
+//converting in array
+let singleFruit = fruitBasket.split(",");
+document.getElementById("demo24").innerHTML = singleFruit[2];
