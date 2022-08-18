@@ -93,7 +93,7 @@ document.getElementById("demo13").innerHTML = newBillionaire;
 
 document.getElementById("demo14").innerHTML = billionaire.replace(/billionaire/i, "MILLIONARE");
 
-let million = "I told told you million times that earning million dollars its not joke. one need to invest his millions of hours to become a true million dollar guy.";
+let million = "I told told you million times that earning MILLION dollars its not joke. one need to invest his millions of hours to become a true million dollar guy.";
 document.getElementById("demo15").innerHTML = million.replace(/million/g, "thousand");
 
 let excessStr = "                                 Hello World!";
@@ -118,3 +118,21 @@ document.getElementById("demo25").innerHTML = fruitBasket.indexOf("Banana");
 
 
 document.getElementById("demo26").innerHTML = million.lastIndexOf("million");
+
+document.getElementById("demo27").innerHTML = million.match(/llion/g);
+document.getElementById("demo28").innerHTML = million.match("lion");
+document.getElementById("demo29").innerHTML = million.match(/LION/gi);
+
+
+document.getElementById("demo30").innerHTML = million.includes("million", 30);
+document.getElementById("demo31").innerHTML = million.includes("billion", 30);
+
+
+document.getElementById("demo32").innerHTML = fruitBasket.startsWith("Apple");
+document.getElementById("demo33").innerHTML = fruitBasket.endsWith("Apple");
+
+let NAME = "Sadman";
+let age = 28;
+let mySelf = `Hello, I am ${NAME} and I am ${age} years old`;
+
+document.getElementById("demo34").innerHTML = mySelf;
