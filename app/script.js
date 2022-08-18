@@ -110,3 +110,11 @@ document.getElementById("demo23").innerHTML = fruitBasket[1];
 //converting in array
 let singleFruit = fruitBasket.split(",");
 document.getElementById("demo24").innerHTML = singleFruit[2];
+
+
+
+//String search
+document.getElementById("demo25").innerHTML = fruitBasket.indexOf("Banana");
+
+
+document.getElementById("demo26").innerHTML = million.lastIndexOf("million");
