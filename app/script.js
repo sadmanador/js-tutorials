@@ -66,6 +66,9 @@ document.getElementById("demo7").innerHTML = poem1 + "<br>" + poem2 + "<br>" + p
 document.getElementById("demo8").innerHTML = "This is a long line \
 of of string.";
 
+
+
+
 //string into object
 let bmw = "car";
 let toyota = new String("car");
@@ -91,7 +94,7 @@ let billionaire = "The top BILLIONAIRE is the founder of Microsoft.";
 let newBillionaire = billionaire.replace("Microsoft", "Tesla");
 document.getElementById("demo13").innerHTML = newBillionaire;
 
-document.getElementById("demo14").innerHTML = billionaire.replace(/billionaire/i, "MILLIONARE");
+document.getElementById("demo14").innerHTML = billionaire.replace(/billionaire/i, "MILLIONAIRE");
 
 let million = "I told told you million times that earning MILLION dollars its not joke. one need to invest his millions of hours to become a true million dollar guy.";
 document.getElementById("demo15").innerHTML = million.replace(/million/g, "thousand");
