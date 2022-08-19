@@ -139,3 +139,13 @@ let age = 28;
 let mySelf = `Hello, I am ${NAME} and I am ${age} years old`;
 
 document.getElementById("demo34").innerHTML = mySelf;
+
+
+let expoNum1 = 123e6;
+document.getElementById("demo35").innerHTML = expoNum1;
+
+
+
+let num15 = 999999999999999;
+let num16 = 9999999999999999;
+document.getElementById("demo36").innerHTML = num15 + "<br>" + num16;
