@@ -153,3 +153,15 @@ document.getElementById("demo36").innerHTML = num15 + "<br>" + num16;
 
 
 document.getElementById("demo37").innerHTML = num15.toString() + num16;
+
+let decimalNum = 9.8765;
+
+document.getElementById("demo38").innerHTML = decimalNum.toExponential(2);
+document.getElementById("demo39").innerHTML = decimalNum.toFixed(2);
+document.getElementById("demo40").innerHTML = decimalNum.toPrecision(2);
+
+document.getElementById("demo41").innerHTML = Number(true);
+
+document.getElementById("demo42").innerHTML = parseInt("100 600");
+
+document.getElementById("demo43").innerHTML = parseFloat("10 years");
