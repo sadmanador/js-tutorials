@@ -71,3 +71,26 @@ document.getElementById("sliceArr").innerHTML = "Original arr: " + pet + "<br>" 
 
 //tostring
 document.getElementById("stringArr").innerHTML = pet.toString() + "<br>" + "typeof: " + typeof pet.toString();
+
+
+
+//Array sort
+//str.sort()
+let name = ["John", "Sadman", "tim", "Masum", "Esha"];
+document.getElementById("noSortArr").innerHTML = name;
+name.sort();
+document.getElementById("sortArr").innerHTML = name;
+//reverse()
+name.reverse();
+document.getElementById("reverseArr").innerHTML = name;
+
+//sorting number
+let numArr = [100, 20, 1, 40, 80, 300,];
+numArr.sort();
+document.getElementById("sortNumber").innerHTML = numArr + "<br>" + "Solution: " + numArr.sort(function(a,b){return a - b});
+
+//descending number sort
+document.getElementById("descendingNum").innerHTML = "descending sort: " + numArr.sort(function(a,b){return b - a});
+
+
+//random shuffling
