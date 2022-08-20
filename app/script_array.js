@@ -15,7 +15,7 @@ car[3] = "MG";
 console.log(car);
 
 
-
+//very important to know that array method changes the original array, when string method doesn't.
 //length
 //any length is always a number
 console.log(car.length);
@@ -50,3 +50,24 @@ let fruits2 = ["Banana", "Orange", "Apple", "Mango"];
 let noBanana = fruits2.shift();
 document.getElementById("shiftArr").innerHTML = fruits2;
 document.getElementById("whatShifted").innerHTML = noBanana;
+
+
+//concatenation
+let list1 = ["dove", "finch", "parrot"];
+let list2 = ["crow", "Cook", "duck"];
+
+document.getElementById("concatArr").innerHTML = list1.concat(list2);
+
+ 
+//splice
+let pet = ["cat", "birds", "dog"];
+pet.splice(1, 0, "fish", "rabbit");
+document.getElementById("spliceArr").innerHTML = pet;
+
+
+//slice
+let noFlypet = pet.slice(1);
+document.getElementById("sliceArr").innerHTML = "Original arr: " + pet + "<br>" + "new sliced arr: " + noFlypet;
+
+//tostring
+document.getElementById("stringArr").innerHTML = pet.toString() + "<br>" + "typeof: " + typeof pet.toString();
