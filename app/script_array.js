@@ -94,3 +94,28 @@ document.getElementById("descendingNum").innerHTML = "descending sort: " + numAr
 
 
 //random shuffling
+let randomVar = [10, 100 ,1, 400, 70, 25, 56, 134, 1977];
+document.getElementById("randomArrSort").innerHTML = randomVar.sort(function(){return 0.5 - Math.random()}) + " refresh to see the sorting";
+
+
+//lowest array value
+randomVar.sort(function(a,b){return a - b});
+document.getElementById("lowestValue").innerHTML = "Lowest array value: " + randomVar[0];
+
+
+//highest array value
+randomVar.sort(function(a, b){return b - a});
+document.getElementById("highestValue").innerHTML = "Lowest array value: " + randomVar[0];
+
+
+//Math.max()
+function myMaxValue (arr){
+    return Math.max.apply(null, arr);
+}
+document.getElementById("mathHighestValue").innerHTML = myMaxValue(randomVar);
+
+//Math.min()
+function myMinValue (arrMin){
+    return Math.min.apply(null, arrMin);
+}
+document.getElementById("mathlowestValue").innerHTML = myMinValue(randomVar);
