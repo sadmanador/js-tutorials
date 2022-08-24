@@ -71,3 +71,22 @@ document.getElementById("forOfStr").innerHTML = txtWorthLess;
 
 
 //while loop
+let txtWhile = "";
+let q = 0;
+while (q < 5) {
+  txtWhile += q + "<br>";
+  q++;
+}
+document.getElementById("whileLoop").innerHTML = txtWhile;
+
+
+
+//do/while
+let txtDo = "";
+let p = 0;
+
+do {txtDo += p + " ";
+  p++;
+}
+while (p < 5);
+document.getElementById("doLoop").innerHTML = txtDo;

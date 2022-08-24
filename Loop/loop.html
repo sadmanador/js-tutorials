@@ -53,8 +53,70 @@
     <p>while loop will loop through when certain condition is true.</p>
     <div id="whileLoop"></div>
 
+    <h2>do/while</h2>
+    <p>do/while is almost like while, instead of code block written in the {}, code block are written at the beginning in "do".</p>
+    <div id="doLoop"></div>
 
 
+    <div class="container">
+        <div class="item1">
+            <h3>for Loop</h3>
+<pre>
+    let txt = "";
+
+    for (let i = 0; i < 5; i++){
+        txt += i;
+    }
+</pre>
+        </div>
+        <div class="item2">
+            <h3>for/in loop</h3>
+<pre>
+    let arr = [1,2,3,4];
+    let txt = "";
+
+    for (let x in arr){
+        txt += arr[x];
+    }
+</pre>
+        </div>
+        <div class="item3">
+            <h3>for/of loop</h3>
+<pre>
+    let arr = [1,2,3,4];
+    let txt = "";
+
+    for (let x of arr){
+        txt += x;
+    }
+</pre>
+        </div>
+        <div class="item4">
+            <h3>while loop</h3>
+<pre>
+    let txt = "";
+    let x = 0;
+
+    while ( x < 5) {
+        txt += x;
+        x++
+    }
+</pre>
+        </div>
+        <div class="item5">
+            <h3>do/while loop</h3>
+<pre>
+    let txt = "";
+    let x = 0;
+
+    do {
+        txt += x;
+        x++
+    }
+    while (x < 5);
+</pre>
+        </div>
+    </div>
 
 
 
@@ -68,12 +130,24 @@
             font-weight: bold;
             font-size: 16px;
         }
+
         em {
            background-color: gray;
            color: rgb(255, 255, 255);
            border-radius: 5px;
            padding: 0px 7px;
            font-weight: bold;
+        }
+
+        .container {
+
+        }
+        [class*="item"] {
+           display: inline-block;
+           width: 300px;
+           height: 200px;
+           background-color: azure;
+           color: black;
         }
     </style>
     <script src="../app/script_loop.js"></script>
